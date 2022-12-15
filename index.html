@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos Online</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-top">
+      <img src="assets/logos/icon.svg" alt="">
+      <h1>Juegos Free!</h1>
+    </div>
+    <div class="loader-bar">
+      <p id="percentage">0%</p>
+    </div>
+  </div>
+  <div class="main-container">
+    <header class="header">
+      <div class="containerHeader">
+        <div class="header-1">
+          <a href="index.html"><img class="logo" src="assets/logos/icon.svg" alt="Juegos Free!"></a>
+          <input type="text" class="search" placeholder="Buscar">
+          <div class="containerHamburguer">
+            <div class="hamburguer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+          <nav>
+            <div class="menuHamburguer">
+              <div class="userSection">
+                <div class="userSectionContainer">
+                  <img src="assets/img/Avatar.png" alt="Avatar">
+                <div>
+                  <p>User name</p>
+                  <p>Nivel: 0</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttonsMenuSection">
+              <button class="button-1">Mi perfil</button>
+              <button class="button-2">Mis juegos</button>
+              <button class="miCarrito button-3">Mi carrito</button>
+              <button class="button-4">Contactanos</button>
+              <button class="button-5">Cerrar sesion</button>
+            </div>
+            <hr class="hrMenu">
+            <div class="shareAccount">
+              <div class="shareAccountContainer">
+                <p>Comparte tu perfil con tus amigos!!</p>
+                <div>
+                  <img src="assets/img/Discord logo.png" alt="Discord">
+                  <img src="assets/img/Facebook logo.png" alt="Facebook">
+                  <img src="assets/img/Twitter logo.png" alt="Twitter">
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <h1 class="hero-title">Proximamente</h1>
+    <div class="img-hero">
+      <a href="hero.html"><img src="assets/img/hero_game.png" alt="Formula 1 Ayrton Senna"></a>
+    </div>
+    <h2 class="categories">Recomendados para ti</h2>
+    <section class="recomend-games">
+      <div class="recomend-games-min">
+          <div style="position: relative;">
+            <div class="recomend-game">
+              <div class="recomend-title-min"><h3>League Of Legends</h3></div>
+              <img src="assets/img/lol.png" alt="League Of Legends">
+              <div class="name-card">
+                <p id="precioLolRecomend"></p>
+                <button class="buttonPlay" id="btnLolRecomend">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div style="position: relative;">
+            <div class="recomend-game">
+              <div class="recomend-title-min"><h3>Friday Night Funkin</h3></div>
+              <img src="assets/img/friday_night_funkin.png" alt="friday night funkin">
+              <div class="name-card">
+                <p id="precioFridayNightFunkinRecomend"></p>
+                <button class="buttonPlay" id="btnFridayNightFunkinRecomend">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recomend-games-max">
+            <div class="recomend-title-principal"><h3>Cuatro en linea - Superclasico</h3></div>
+            <img src="assets/img/cuatro_en_linea.png" alt="Cuatro en linea">
+            <div class="name-card">
+              <p>Gratis!</p>
+              <button class="buttonPlay"><a href="game.html">Jugar</a></button>
+            </div>
+        </div>
+      </section>
+    <h2 class="categories">Deportes</h2>
+    <section class="carrusel-categories" id="carrusel-categories-deportes">
+      <div class="slider-categories" id="slider-categories-deportes">
+        <div class="slider-inner-categories" id="slider-inner-categories-deportes">
+          <div class="slide-img-categories" id="slide-img-categories-deportes">
+            <div class="titleGame"><h3>8 Ball Pool</h3></div>
+            <img src="assets/img/8_ball_pool.png" alt="8_ball_pool">
+            <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+          </div>
+        <div class="slide-img-categories" id="slide-img-categories-deportes">
+          <div class="titleGame"><h3>Head Football</h3></div>
+          <img src="assets/img/head_football.png" alt="head_football">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-deportes">
+          <div class="titleGame"><h3>Football Legends</h3></div>
+          <img src="assets/img/football_legends.png" alt="football_legends">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-deportes">
+          <div class="titleGame"><h3>Club Manager</h3></div>
+          <img src="assets/img/club_manager.png" alt="club_manager">
+          <div class="ref"><h4 id="precioClubManager"></h4><div class="containerButtonPlay"><button class="buttonPlay" id="btnClubManager">Comprar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-deportes">
+          <div class="titleGame"><h3>Baseball Stadium</h3></div>
+          <img src="assets/img/baseball_stadium.png" alt="baseball_stadium">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-deportes">
+          <div class="titleGame"><h3>1 on 1 Soccer</h3></div>
+          <img src="assets/img/1_on_1_soccer.png" alt="1_on_1_soccer">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+      </div> 
+    </div>
+  </section>
+    <h2 class="categories">Juegos de mesa</h2>
+    <section class="carrusel-categories" id="carrusel-categories-juegosDeMesa">
+      <div class="slider-categories" id="slider-categories-juegosDeMesa">
+        <div class="slider-inner-categories" id="slider-inner-categories-juegosDeMesa">
+          <div class="slide-img-categories" id="slide-img-categories-juegosDeMesa">
+            <div class="titleGame"><h3>Cuatro en linea</h3></div>
+            <img src="assets/img/cuatro_en_linea_small.png" alt="cuatro_en_linea">
+            <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+          </div>
+        <div class="slide-img-categories" id="slide-img-categories-juegosDeMesa">
+          <div class="titleGame"><h3>Chess Multiplayer</h3></div>
+          <img src="assets/img/chess_multiplayer.png" alt="chess_multiplayer">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-juegosDeMesa">
+          <div class="titleGame"><h3>Card Solitaire</h3></div>
+          <img src="assets/img/card_solitaire.png" alt="solitaire">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-juegosDeMesa">
+          <div class="titleGame"><h3>Damas</h3></div>
+          <img src="assets/img/damas.png" alt="damas">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-juegosDeMesa">
+          <div class="titleGame"><h3>Governor Of Poker</h3></div>
+          <img src="assets/img/governor_of_poker.png" alt="governor_of_poker">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-juegosDeMesa">
+          <div class="titleGame"><h3>Chess War</h3></div>
+          <img src="assets/img/chess_war.png" alt="chess_war">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+      </div> 
+    </div>
+  </section>
+    <h2 class="categories">Accion</h2>
+    <section class="carrusel-categories" id="carrusel-categories-accion">
+      <div class="slider-categories" id="slider-categories-accion">
+        <div class="slider-inner-categories" id="slider-inner-categories-accion">
+          <div class="slide-img-categories" id="slide-img-categories-accion">
+            <div class="titleGame"><h3>Stickman</h3></div>
+            <img src="assets/img/stickman.png" alt="stickman">
+            <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+          </div>
+        <div class="slide-img-categories" id="slide-img-categories-accion">
+          <div class="titleGame"><h3>League Of Legends</h3></div>
+          <img src="assets/img/lol.png" alt="League of legends">
+          <div class="ref"><h4 id="precioLol"></h4><div class="containerButtonPlay"><button class="buttonPlay" id="btnLol">Comprar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-accion">
+          <div class="titleGame"><h3>Metal Slug</h3></div>
+          <img src="assets/img/metal_slug.png" alt="metal_slug">
+          <div class="ref"><h4 id="precioMetalSlug"></h4><div class="containerButtonPlay"><button class="buttonPlay" id="btnMetalSlug">Comprar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-accion">
+          <div class="titleGame"><h3>The Last Stand</h3></div>
+          <img src="assets/img/the_last_stand.png" alt="the_last_stand">
+          <div class="ref"><h4 id="precioTheLastStand"></h4><div class="containerButtonPlay"><button class="buttonPlay" id="btnTheLastStand">Comprar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-accion">
+          <div class="titleGame"><h3>Raze</h3></div>
+          <img src="assets/img/raze.png" alt="raze">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-accion">
+          <div class="titleGame"><h3>Intrussion</h3></div>
+          <img src="assets/img/intrussion.png" alt="intrussion">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+      </div> 
+    </div>
+  </section>
+    <h2 class="categories">Habilidad</h2>
+    <section class="carrusel-categories" id="carrusel-categories-habilidad">
+      <div class="slider-categories" id="slider-categories-habilidad">
+        <div class="slider-inner-categories" id="slider-inner-categories-habilidad">
+          <div class="slide-img-categories" id="slide-img-categories-habilidad">
+            <div class="titleGame"><h3>Subway Surfer</h3></div>
+            <img src="assets/img/subway_surfer.png" alt="subway_surfer">
+            <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+          </div>
+        <div class="slide-img-categories" id="slide-img-categories-habilidad">
+          <div class="titleGame"><h3>Friday Night Funkin</h3></div>
+          <img src="assets/img/friday_night_funkin.png" alt="friday_night_funkin">
+          <div class="ref"><h4 id="precioFridayNightFunkin"></h4><div class="containerButtonPlay"><button class="buttonPlay" id="btnFridayNightFunkin">Comprar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-habilidad">
+          <div class="titleGame"><h3>Geometry Dash</h3></div>
+          <img src="assets/img/geometry_dash.png" alt="Geometry_dash">
+          <div class="ref"><h4 id="precioGeometryDash"></h4><div class="containerButtonPlay"><button class="buttonPlay" id="btnGeometryDash">Compar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-habilidad">
+          <div class="titleGame"><h3>Candy Crush</h3></div>
+          <img src="assets/img/candy_crush.png" alt="candy_crush">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-habilidad">
+          <div class="titleGame"><h3>Stickman Boost</h3></div>
+          <img src="assets/img/stickman_boost.png" alt="stickman_boost">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+        <div class="slide-img-categories" id="slide-img-categories-habilidad">
+          <div class="titleGame"><h3>Stickmania</h3></div>
+          <img src="assets/img/stickmania.png" alt="stickmania">
+          <div class="ref"><h4>Gratuito</h4><div class="containerButtonPlay"><button class="buttonPlay">Jugar</button></div></div>
+  
+        </div>
+      </div> 
+    </div>
+  </section>
+    <footer>
+      <div>
+        <ul>
+          <li class="footer-title">Nuestros Juegos</li>
+          <li>Deportes</li>
+          <li>Juegos de mesa</li>
+          <li>Accion</li>
+          <li>Habilidad</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="footer-title">Perfil</li>
+          <li>Mi perfil</li>
+          <li>Mis juegos</li>
+          <li>Mi carrito</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="footer-title">Sobre Nosotros</li>
+          <li>Contacto</li>
+          <li>Trabaja para nosotros</li>
+          <li>Bases y condiciones</li>
+          <li>Copyright</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li class="footer-title">Comunidad</li>
+          <div class="comunity">
+            <li><img src="assets/logos/twitter_logo.svg" alt=""></li>
+            <li><img src="assets/logos/discord_logo.svg" alt=""></li>
+            <li><img src="assets/logos/facebook_logo.png" alt=""></li>
+          </div>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/JuegosComprables.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/funcionSticky.js"></script>
+  </div>
+</body>
+</html>

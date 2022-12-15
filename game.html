@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos Online</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header class="header">
+    <div class="containerHeader">
+      <div class="header-1">
+        <a href="index.html"><img class="logo" src="assets/logos/icon.svg" alt="Juegos Free!"></a>
+        <input type="text" class="search" placeholder="Buscar">
+        <div class="containerHamburguer">
+          <div class="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+        <nav>
+          <div class="menuHamburguer">
+            <div class="userSection">
+              <div class="userSectionContainer">
+                <img src="assets/img/Avatar.png" alt="Avatar">
+              <div>
+                <p>User name</p>
+                <p>Nivel: 0</p>
+              </div>
+            </div>
+          </div>
+          <div class="buttonsMenuSection">
+            <button class="button-1">Mi perfil</button>
+            <button class="button-2">Mis juegos</button>
+            <button class="miCarrito button-3">Mi carrito</button>
+            <button class="button-4">Contactanos</button>
+            <button class="button-5">Cerrar sesion</button>
+          </div>
+          <hr class="hrMenu">
+          <div class="shareAccount">
+            <div class="shareAccountContainer">
+              <p>Comparte tu perfil con tus amigos!!</p>
+              <div>
+                <img src="assets/img/Discord logo.png" alt="Discord">
+                <img src="assets/img/Facebook logo.png" alt="Facebook">
+                <img src="assets/img/Twitter logo.png" alt="Twitter">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 class="game-title">Cuatro en linea - Superclasico</h1>
+
+    <section class="img-game">
+      <div class="position-relative">
+        <img class="imgGame" src="assets/img/cuatro_en_linea_game.png" alt="Juego cuatro en linea">
+        <div class="play-game" id="play-game">
+          <h2>Jugar ahora!</h2>
+          <button class="buttonPlay" id="playGame">Jugar</button>
+        </div>
+        <div class="loadingGame" id="loading">
+          <div class="loaderGame" id="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <h1 class="porcentaje" id="porcentaje"></h1>
+        </div>
+        <div class="game-intro" id="gameIntro">
+          <img src="assets/img/Logo juego.png" alt="4 en linea superclasico">
+        </div>
+        <div class="pressKey" id="pressKey">
+          <h2>Presione culaquier tecla para jugar!</h2>
+        </div>
+        <section class="game-menu" id="game-menu">
+          <img src="assets/img/canchaFutbol.png" alt="Fondo Menu">
+          <div class="buttonsGame" id="buttonsGame">
+            <button id="mode5">Jugar 5 en linea</button>
+            <button id="mode4">Jugar 4 en linea</button>
+            <button id="mode3">Jugar 3 en linea</button>
+            <button id="help">Instrucciones</button>
+          </div>
+          <div class="fichasEleccion" id="fichasEleccion">
+            <div class="opcion">
+              <img src="assets/img/riverEleccion.png" alt="Escudo de River Plate"> <img src="assets/img/bocaEleccion.png" alt="Escudo de Boca Juniors">
+              <button id="buttonOpcionA">Opcion A</button>
+              <button id="buttonOpcionB">Opcion B</button>
+              <img src="assets/img/RiverEleccion2.png" alt="Escudo alternativo de River Plate"> <img src="assets/img/BocaEleccion2.png" alt="Escudo alternativo de Boca Juniors">
+            </div>
+            <div class="buttonBack">
+              <button id="back">Volver</button>
+            </div>
+          </div>
+          <div class="instrucciones" id="instrucciones">
+            <div>
+              <h2>Como jugar</h2>
+              <p>Elegir con que fichas van a jugar. Tendran un tiempo maximo de 5 minutos en total y cada jugador va a tener su turno con un timepo de 15 segundos.
+                Objetivo hacer una linea de N tamaño(depende del modo elegido) sea de manera horizontal, vertical o diagonal. Para poder formar la linea hagan click sobre su ficha, arrastrela y sueltela donde desea ubicarla.
+              </p>
+              <img src="assets/img/mouseGif.gif" alt="Hacer click y arrastrar">
+              <button id="closeHelp">Cerrar</button>
+            </div>
+          </div>
+        </section>
+        <div class="timeGame" id="timeGame"></div>
+        <canvas class="myCanvas" id="myCanvas" width="1353" height="670"></canvas>
+        <div class="timeTurn" id="timeTurn"></div>
+        <div class="opcionInGame" id="opcionInGame">
+          <button id="reload">Reiniciar</button>
+          <button id="exit">Salir</button>
+        </div>
+        <div class="time" id="time">A la partida le quedan: 5 - Minutos</div>
+        <div class="winner" id="winner">
+          <h1 id="winnerTitle"></h1>
+          <button id="exitEndGame">Salir</button>
+        </div>
+    </section>
+
+    <section class="container">
+      <p>Bienvenidos a una nueva edicion del superclasico argentino! En esta edicion, Boca y River se enfrentan para ver quien es el primer finalista de la Copa Argentina 2022. Elegi tu equipo favorito y llevalo a la final, ganando este maravilloso cuatro en linea!</p>
+      
+      <div class="animated-images">
+        <img id="gallery-img-1" src="assets/img/juanfer.jpg" alt="">
+        <img id="gallery-img-3" src="assets/img/copa-argentina.jpg" alt="">
+        <img id="gallery-img-4" src="assets/img/superclasico.png" alt="">
+        <img id="gallery-img-4" src="assets/img/copa-argentina-logo.jpg" alt="">
+        <img id="gallery-img-2" src="assets/img/benedetto.jpg" alt="">
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/oUlKlNpVAuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="https://www.promiedos.com.ar/copaargentina">Todo sobre la copa argentina!</a>
+      </div>
+    </section>
+
+    <section class="game-instructions">
+      <h3>Instrucciones</h3>
+      <ul>
+        <li> <p>Primero se debera elegir quien sera el jugador uno y quien el jugador dos.</p></li>
+        <li> <p>El juego se juega solo con el mouse, el cual se iran compartiendo dependiendo de a quien le toque jugar</p></li>
+        <li> <p>El ganador del juego sera aquel que consiga tener cuatro fichas de su equipo en linea, ya sea de forma vertical, horizonal o en diagonal</p></li>
+      </ul>
+      <p>A divertirse!</p>
+    </section>
+
+    <section class="game-forum">
+      <h3 class="titleForo">Dejanos tu mensaje!</h3>
+      <div class="comment-input">
+        <textarea placeholder="Deja aca tu comentario!"></textarea>
+        <button>Comenta!</button>
+      </div>
+      <div class="comments-box">
+        <div class="comment">
+          <img src="assets/img/Avatar.png" alt="Avatar">
+          <div>
+            <h4>Gamer_Xxx</h4>
+            <p>Que juegazo! :)</p>
+          </div>
+        </div>
+        <div class="comment">
+          <img src="assets/img/Avatar.png" alt="Avatar">
+          <div>
+            <h4>KillerMaker</h4>
+            <p>Se quedaron afuera con patronato</p>
+          </div>
+        </div>
+        <div class="comment">
+          <img src="assets/img/Avatar.png" alt="Avatar">
+          <div>
+            <h4>Godines10</h4>
+            <p>Quien se anima a jugarme?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="share-game">
+      <h3>Comparti el juego con amigos en tus redes sociales!</h3>
+      <div class="share-container">
+        <div>
+          <a href="https://www.facebook.com/" class="share-button"><img src="assets/img/Facebook logo blanco.png" alt="Facebook"><h3>Facebook</h3></a>
+          <a href="https://twitter.com/?lang=es" class="share-button"><img src="assets/img/Twitter logo blanco.png" alt="Twitter"><h3>Twitter</h3></a>
+        </div>
+        <div>
+          <a href="" class="share-button"><img src="assets/img/🦆 icon _copy_.png" alt="Copy"><h3>Copy link</h3></a>
+          <a href="https://discord.com/" class="share-button"><img src="assets/img/Discord logo blanco.png" alt="Discord"><h3>Discord</h3></a>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <div>
+      <ul>
+        <li class="footer-title">Nuestros Juegos</li>
+        <li>Deportes</li>
+        <li>Juegos de mesa</li>
+        <li>Accion</li>
+        <li>Habilidad</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="footer-title">Perfil</li>
+        <li>Mi perfil</li>
+        <li>Mis juegos</li>
+        <li>Mi carrito</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="footer-title">Sobre Nosotros</li>
+        <li>Contacto</li>
+        <li>Trabaja para nosotros</li>
+        <li>Bases y condiciones</li>
+        <li>Copyright</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="footer-title">Comunidad</li>
+        <div class="comunity">
+          <li><img src="assets/logos/twitter_logo.svg" alt=""></li>
+          <li><img src="assets/logos/discord_logo.svg" alt=""></li>
+          <li><img src="assets/logos/facebook_logo.png" alt=""></li>
+        </div>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/objetosJuego/Casillero.js"></script>
+  <script src="js/objetosJuego/Circle.js"></script>
+  <script src="js/objetosJuego/Tiempo.js"></script>
+  <script src="js/objetosJuego/Tablero.js"></script>
+  <script src="js/funcionSticky.js"></script>
+</body>
+</html>
